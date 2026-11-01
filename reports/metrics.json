@@ -1,0 +1,990 @@
+{
+  "model": {
+    "selected_kind": "logreg",
+    "candidates": {
+      "logreg": {
+        "valid_accuracy": 0.9200799200799201,
+        "valid_macro_f1": 0.9212962764233651,
+        "fit_seconds": 25.0
+      },
+      "svm_calibrated": {
+        "valid_accuracy": 0.9150849150849151,
+        "valid_macro_f1": 0.9171195049686174,
+        "fit_seconds": 5.6
+      }
+    },
+    "fit_size": 9002,
+    "valid_size": 1001,
+    "hybrid_alpha": 0.8,
+    "alpha_valid_article_accuracy": {
+      "1.0": 0.9431,
+      "0.9": 0.9441,
+      "0.8": 0.9451,
+      "0.7": 0.9431,
+      "0.6": 0.9391,
+      "0.5": 0.9411
+    },
+    "fr_dev": {
+      "dev_size": 46,
+      "dev_coverage": 0.8695652173913043,
+      "dev_accepted_accuracy": 0.975
+    },
+    "versions": {
+      "python": "3.13.16",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "banking77_test": {
+    "test_size": 3080,
+    "intent": {
+      "accuracy": 0.9101,
+      "macro_f1": 0.9103,
+      "top3_accuracy": 0.9747,
+      "threshold": 0.4509,
+      "coverage": 0.9205,
+      "accepted_accuracy": 0.9467,
+      "risk_coverage": [
+        {
+          "coverage": 0.0003246753246753247,
+          "accuracy": 1.0,
+          "threshold": 0.9999305167055937
+        },
+        {
+          "coverage": 0.020454545454545454,
+          "accuracy": 1.0,
+          "threshold": 0.9993375532266535
+        },
+        {
+          "coverage": 0.04090909090909091,
+          "accuracy": 1.0,
+          "threshold": 0.9988249772121807
+        },
+        {
+          "coverage": 0.06136363636363636,
+          "accuracy": 1.0,
+          "threshold": 0.9982323407711586
+        },
+        {
+          "coverage": 0.08181818181818182,
+          "accuracy": 1.0,
+          "threshold": 0.9976874943333638
+        },
+        {
+          "coverage": 0.10227272727272728,
+          "accuracy": 0.9968253968253968,
+          "threshold": 0.9969468099304778
+        },
+        {
+          "coverage": 0.12272727272727273,
+          "accuracy": 0.9973544973544973,
+          "threshold": 0.9963202339719203
+        },
+        {
+          "coverage": 0.14285714285714285,
+          "accuracy": 0.9954545454545455,
+          "threshold": 0.9955147326073877
+        },
+        {
+          "coverage": 0.16331168831168832,
+          "accuracy": 0.9960238568588469,
+          "threshold": 0.9944621381365129
+        },
+        {
+          "coverage": 0.18376623376623377,
+          "accuracy": 0.9964664310954063,
+          "threshold": 0.9933034669826256
+        },
+        {
+          "coverage": 0.20422077922077922,
+          "accuracy": 0.9968203497615262,
+          "threshold": 0.9921356219679461
+        },
+        {
+          "coverage": 0.22467532467532467,
+          "accuracy": 0.9971098265895953,
+          "threshold": 0.9908753080070891
+        },
+        {
+          "coverage": 0.24512987012987014,
+          "accuracy": 0.9973509933774835,
+          "threshold": 0.9898541422584219
+        },
+        {
+          "coverage": 0.26525974025974025,
+          "accuracy": 0.9975520195838433,
+          "threshold": 0.9885820016519952
+        },
+        {
+          "coverage": 0.2857142857142857,
+          "accuracy": 0.9977272727272727,
+          "threshold": 0.9867519163361134
+        },
+        {
+          "coverage": 0.30616883116883115,
+          "accuracy": 0.9978791092258749,
+          "threshold": 0.9851495483052328
+        },
+        {
+          "coverage": 0.32662337662337665,
+          "accuracy": 0.9980119284294234,
+          "threshold": 0.9832094735528111
+        },
+        {
+          "coverage": 0.3470779220779221,
+          "accuracy": 0.9981290926099158,
+          "threshold": 0.9809166436483489
+        },
+        {
+          "coverage": 0.36753246753246754,
+          "accuracy": 0.9982332155477032,
+          "threshold": 0.9784165567832003
+        },
+        {
+          "coverage": 0.38766233766233765,
+          "accuracy": 0.998324958123953,
+          "threshold": 0.9760786186468609
+        },
+        {
+          "coverage": 0.4081168831168831,
+          "accuracy": 0.9984089101034208,
+          "threshold": 0.9730457674882674
+        },
+        {
+          "coverage": 0.42857142857142855,
+          "accuracy": 0.9984848484848485,
+          "threshold": 0.969808140723155
+        },
+        {
+          "coverage": 0.44902597402597405,
+          "accuracy": 0.9971077368040492,
+          "threshold": 0.9669200543273513
+        },
+        {
+          "coverage": 0.4694805194805195,
+          "accuracy": 0.9965421853388658,
+          "threshold": 0.9627614985606795
+        },
+        {
+          "coverage": 0.48993506493506495,
+          "accuracy": 0.9953611663353215,
+          "threshold": 0.9573860633648564
+        },
+        {
+          "coverage": 0.5100649350649351,
+          "accuracy": 0.9955442393380013,
+          "threshold": 0.9528011818841507
+        },
+        {
+          "coverage": 0.5305194805194805,
+          "accuracy": 0.9951040391676866,
+          "threshold": 0.9462222076327889
+        },
+        {
+          "coverage": 0.550974025974026,
+          "accuracy": 0.99469652327637,
+          "threshold": 0.9387144294737554
+        },
+        {
+          "coverage": 0.5714285714285714,
+          "accuracy": 0.99375,
+          "threshold": 0.9311262563484681
+        },
+        {
+          "coverage": 0.5918831168831169,
+          "accuracy": 0.9934174437739989,
+          "threshold": 0.9205573195440304
+        },
+        {
+          "coverage": 0.6123376623376623,
+          "accuracy": 0.9936373276776246,
+          "threshold": 0.9106815231928139
+        },
+        {
+          "coverage": 0.6324675324675325,
+          "accuracy": 0.9912731006160165,
+          "threshold": 0.900690644183772
+        },
+        {
+          "coverage": 0.6529220779220779,
+          "accuracy": 0.989557434112382,
+          "threshold": 0.8887362064488752
+        },
+        {
+          "coverage": 0.6733766233766234,
+          "accuracy": 0.9889103182256509,
+          "threshold": 0.8760041435099243
+        },
+        {
+          "coverage": 0.6938311688311688,
+          "accuracy": 0.988301357042583,
+          "threshold": 0.8582537742342873
+        },
+        {
+          "coverage": 0.7142857142857143,
+          "accuracy": 0.9868181818181818,
+          "threshold": 0.8378578165330514
+        },
+        {
+          "coverage": 0.7347402597402597,
+          "accuracy": 0.9849756959787892,
+          "threshold": 0.8154254438876651
+        },
+        {
+          "coverage": 0.7548701298701299,
+          "accuracy": 0.9836559139784946,
+          "threshold": 0.7905265336936633
+        },
+        {
+          "coverage": 0.7753246753246753,
+          "accuracy": 0.9824120603015075,
+          "threshold": 0.7658185712047688
+        },
+        {
+          "coverage": 0.7957792207792208,
+          "accuracy": 0.9796001631986944,
+          "threshold": 0.7359279810347015
+        },
+        {
+          "coverage": 0.8162337662337662,
+          "accuracy": 0.9765314240254575,
+          "threshold": 0.7002672834369633
+        },
+        {
+          "coverage": 0.8366883116883117,
+          "accuracy": 0.9751649204501358,
+          "threshold": 0.6559165217225781
+        },
+        {
+          "coverage": 0.8571428571428571,
+          "accuracy": 0.9708333333333333,
+          "threshold": 0.6169737969797647
+        },
+        {
+          "coverage": 0.8772727272727273,
+          "accuracy": 0.9655810510732791,
+          "threshold": 0.5813968569036178
+        },
+        {
+          "coverage": 0.8977272727272727,
+          "accuracy": 0.9562386980108499,
+          "threshold": 0.5275557748805787
+        },
+        {
+          "coverage": 0.9181818181818182,
+          "accuracy": 0.9483734087694484,
+          "threshold": 0.45914566331991724
+        },
+        {
+          "coverage": 0.9386363636363636,
+          "accuracy": 0.9405050155655482,
+          "threshold": 0.39627435795956534
+        },
+        {
+          "coverage": 0.9590909090909091,
+          "accuracy": 0.9319566689234936,
+          "threshold": 0.3386823459738707
+        },
+        {
+          "coverage": 0.9795454545454545,
+          "accuracy": 0.9231024196221412,
+          "threshold": 0.2738866643469696
+        },
+        {
+          "coverage": 1.0,
+          "accuracy": 0.910064935064935,
+          "threshold": 0.05925436181901431
+        }
+      ],
+      "top_confusions": [
+        {
+          "gold": "unable_to_verify_identity",
+          "pred": "verify_my_identity",
+          "count": 5
+        },
+        {
+          "gold": "virtual_card_not_working",
+          "pred": "get_disposable_virtual_card",
+          "count": 5
+        },
+        {
+          "gold": "balance_not_updated_after_bank_transfer",
+          "pred": "transfer_not_received_by_recipient",
+          "count": 5
+        },
+        {
+          "gold": "card_payment_wrong_exchange_rate",
+          "pred": "wrong_exchange_rate_for_cash_withdrawal",
+          "count": 4
+        },
+        {
+          "gold": "why_verify_identity",
+          "pred": "unable_to_verify_identity",
+          "count": 4
+        },
+        {
+          "gold": "top_up_failed",
+          "pred": "top_up_reverted",
+          "count": 4
+        },
+        {
+          "gold": "card_arrival",
+          "pred": "card_delivery_estimate",
+          "count": 3
+        },
+        {
+          "gold": "fiat_currency_support",
+          "pred": "exchange_via_app",
+          "count": 3
+        },
+        {
+          "gold": "pin_blocked",
+          "pred": "card_not_working",
+          "count": 3
+        },
+        {
+          "gold": "transfer_not_received_by_recipient",
+          "pred": "balance_not_updated_after_bank_transfer",
+          "count": 3
+        },
+        {
+          "gold": "card_acceptance",
+          "pred": "card_not_working",
+          "count": 3
+        },
+        {
+          "gold": "top_up_reverted",
+          "pred": "top_up_failed",
+          "count": 3
+        }
+      ],
+      "worst_f1": [
+        {
+          "intent": "balance_not_updated_after_bank_transfer",
+          "f1": 0.7294
+        },
+        {
+          "intent": "pending_transfer",
+          "f1": 0.7792
+        },
+        {
+          "intent": "top_up_failed",
+          "f1": 0.7848
+        },
+        {
+          "intent": "card_not_working",
+          "f1": 0.8085
+        },
+        {
+          "intent": "virtual_card_not_working",
+          "f1": 0.8116
+        },
+        {
+          "intent": "failed_transfer",
+          "f1": 0.8235
+        },
+        {
+          "intent": "unable_to_verify_identity",
+          "f1": 0.825
+        },
+        {
+          "intent": "wrong_exchange_rate_for_cash_withdrawal",
+          "f1": 0.8293
+        }
+      ],
+      "mean_predict_ms_batched": 0.081
+    },
+    "article": {
+      "n_articles": 21,
+      "alpha": 0.8,
+      "accuracy_hybrid": 0.9503,
+      "accuracy_classifier_only": 0.9513,
+      "accuracy_retrieval_only": 0.6649,
+      "retrieval_only_hit3": 0.8497,
+      "threshold": 0.248,
+      "coverage": 0.9922,
+      "accepted_accuracy": 0.9552,
+      "risk_coverage": [
+        {
+          "coverage": 0.0003246753246753247,
+          "accuracy": 1.0,
+          "threshold": 0.936217605545482
+        },
+        {
+          "coverage": 0.020454545454545454,
+          "accuracy": 1.0,
+          "threshold": 0.9165602064320512
+        },
+        {
+          "coverage": 0.04090909090909091,
+          "accuracy": 1.0,
+          "threshold": 0.909114823451399
+        },
+        {
+          "coverage": 0.06136363636363636,
+          "accuracy": 0.9947089947089947,
+          "threshold": 0.9033199237717634
+        },
+        {
+          "coverage": 0.08181818181818182,
+          "accuracy": 0.996031746031746,
+          "threshold": 0.8991513624709223
+        },
+        {
+          "coverage": 0.10227272727272728,
+          "accuracy": 0.9968253968253968,
+          "threshold": 0.8954392758633674
+        },
+        {
+          "coverage": 0.12272727272727273,
+          "accuracy": 0.9973544973544973,
+          "threshold": 0.8929545379186887
+        },
+        {
+          "coverage": 0.14285714285714285,
+          "accuracy": 0.9977272727272727,
+          "threshold": 0.8901305423025256
+        },
+        {
+          "coverage": 0.16331168831168832,
+          "accuracy": 0.9980119284294234,
+          "threshold": 0.8878130676301718
+        },
+        {
+          "coverage": 0.18376623376623377,
+          "accuracy": 0.9982332155477032,
+          "threshold": 0.8851954732007739
+        },
+        {
+          "coverage": 0.20422077922077922,
+          "accuracy": 0.9984101748807631,
+          "threshold": 0.8829355261310925
+        },
+        {
+          "coverage": 0.22467532467532467,
+          "accuracy": 0.9985549132947977,
+          "threshold": 0.880464047930459
+        },
+        {
+          "coverage": 0.24512987012987014,
+          "accuracy": 0.9986754966887417,
+          "threshold": 0.8789478967026395
+        },
+        {
+          "coverage": 0.26525974025974025,
+          "accuracy": 0.9987760097919217,
+          "threshold": 0.8770690397744267
+        },
+        {
+          "coverage": 0.2857142857142857,
+          "accuracy": 0.9988636363636364,
+          "threshold": 0.8749636916073058
+        },
+        {
+          "coverage": 0.30616883116883115,
+          "accuracy": 0.9989395546129375,
+          "threshold": 0.8727498546049506
+        },
+        {
+          "coverage": 0.32662337662337665,
+          "accuracy": 0.9990059642147118,
+          "threshold": 0.8705168501671741
+        },
+        {
+          "coverage": 0.3470779220779221,
+          "accuracy": 0.9990645463049579,
+          "threshold": 0.8679238541569908
+        },
+        {
+          "coverage": 0.36753246753246754,
+          "accuracy": 0.9991166077738516,
+          "threshold": 0.8655378963766993
+        },
+        {
+          "coverage": 0.38766233766233765,
+          "accuracy": 0.998324958123953,
+          "threshold": 0.8629869653756412
+        },
+        {
+          "coverage": 0.4081168831168831,
+          "accuracy": 0.9984089101034208,
+          "threshold": 0.8608800759503575
+        },
+        {
+          "coverage": 0.42857142857142855,
+          "accuracy": 0.9984848484848485,
+          "threshold": 0.8578077933964137
+        },
+        {
+          "coverage": 0.44902597402597405,
+          "accuracy": 0.9985538684020245,
+          "threshold": 0.8550281632866683
+        },
+        {
+          "coverage": 0.4694805194805195,
+          "accuracy": 0.9986168741355463,
+          "threshold": 0.8524359256595047
+        },
+        {
+          "coverage": 0.48993506493506495,
+          "accuracy": 0.9973492379058979,
+          "threshold": 0.849627557909394
+        },
+        {
+          "coverage": 0.5100649350649351,
+          "accuracy": 0.9968173138128581,
+          "threshold": 0.8461155052366698
+        },
+        {
+          "coverage": 0.5305194805194805,
+          "accuracy": 0.9969400244798041,
+          "threshold": 0.8410257459722372
+        },
+        {
+          "coverage": 0.550974025974026,
+          "accuracy": 0.9970536240424278,
+          "threshold": 0.8363868153822003
+        },
+        {
+          "coverage": 0.5714285714285714,
+          "accuracy": 0.9971590909090909,
+          "threshold": 0.8316429304882313
+        },
+        {
+          "coverage": 0.5918831168831169,
+          "accuracy": 0.9972572682391662,
+          "threshold": 0.8244887359772349
+        },
+        {
+          "coverage": 0.6123376623376623,
+          "accuracy": 0.9973488865323435,
+          "threshold": 0.8193212777420017
+        },
+        {
+          "coverage": 0.6324675324675325,
+          "accuracy": 0.9974332648870636,
+          "threshold": 0.8131988959237767
+        },
+        {
+          "coverage": 0.6529220779220779,
+          "accuracy": 0.9975136747886624,
+          "threshold": 0.8074029483746776
+        },
+        {
+          "coverage": 0.6733766233766234,
+          "accuracy": 0.9971070395371263,
+          "threshold": 0.801104770723322
+        },
+        {
+          "coverage": 0.6938311688311688,
+          "accuracy": 0.9967243799719232,
+          "threshold": 0.7943756532682686
+        },
+        {
+          "coverage": 0.7142857142857143,
+          "accuracy": 0.995,
+          "threshold": 0.7869963820008438
+        },
+        {
+          "coverage": 0.7347402597402597,
+          "accuracy": 0.9951391957578436,
+          "threshold": 0.7741707633515097
+        },
+        {
+          "coverage": 0.7548701298701299,
+          "accuracy": 0.993978494623656,
+          "threshold": 0.7596566453135275
+        },
+        {
+          "coverage": 0.7753246753246753,
+          "accuracy": 0.9932998324958124,
+          "threshold": 0.7444581138035681
+        },
+        {
+          "coverage": 0.7957792207792208,
+          "accuracy": 0.99265605875153,
+          "threshold": 0.7274464051290386
+        },
+        {
+          "coverage": 0.8162337662337662,
+          "accuracy": 0.9920445505171042,
+          "threshold": 0.7046971176264025
+        },
+        {
+          "coverage": 0.8366883116883117,
+          "accuracy": 0.9910748932867676,
+          "threshold": 0.681856820469421
+        },
+        {
+          "coverage": 0.8571428571428571,
+          "accuracy": 0.9901515151515151,
+          "threshold": 0.6414312515801839
+        },
+        {
+          "coverage": 0.8772727272727273,
+          "accuracy": 0.9885270170244264,
+          "threshold": 0.6015786890643262
+        },
+        {
+          "coverage": 0.8977272727272727,
+          "accuracy": 0.98625678119349,
+          "threshold": 0.5565467259730609
+        },
+        {
+          "coverage": 0.9181818181818182,
+          "accuracy": 0.983026874115983,
+          "threshold": 0.5104954578986876
+        },
+        {
+          "coverage": 0.9386363636363636,
+          "accuracy": 0.9778623313732273,
+          "threshold": 0.4581216007157807
+        },
+        {
+          "coverage": 0.9590909090909091,
+          "accuracy": 0.969532836831415,
+          "threshold": 0.39036602941704057
+        },
+        {
+          "coverage": 0.9795454545454545,
+          "accuracy": 0.9605568445475638,
+          "threshold": 0.31934678525507215
+        },
+        {
+          "coverage": 1.0,
+          "accuracy": 0.9503246753246753,
+          "threshold": 0.10361909224399624
+        }
+      ]
+    }
+  },
+  "french": {
+    "dev": {
+      "in_scope": 42,
+      "out_of_scope": 4,
+      "hit1": 0.9286,
+      "hit3": 0.9762,
+      "mrr": 0.955,
+      "coverage": 0.9286,
+      "accepted_accuracy": 1.0,
+      "oos_rejection_rate": 0.75
+    },
+    "test": {
+      "in_scope": 63,
+      "out_of_scope": 8,
+      "hit1": 0.9048,
+      "hit3": 1.0,
+      "mrr": 0.9497,
+      "coverage": 0.9683,
+      "accepted_accuracy": 0.9016,
+      "oos_rejection_rate": 1.0
+    },
+    "threshold": 0.3114,
+    "margin": 0.02
+  },
+  "en_out_of_scope": {
+    "n": 10,
+    "rejection_rate": 1.0,
+    "max_confidence": 0.23,
+    "threshold": 0.248
+  },
+  "language_detection": {
+    "en_banking77_test_accuracy": 0.9951,
+    "fr_queries_accuracy": 1.0
+  },
+  "domain_gate": {
+    "en_banking77_test_pass_rate": 0.9795
+  },
+  "pii": {
+    "CARD": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "exact": 12
+    },
+    "IBAN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "exact": 12
+    },
+    "RIB": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "exact": 6
+    },
+    "PHONE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "exact": 12
+    },
+    "EMAIL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "exact": 12
+    },
+    "CIN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "exact": 6
+    },
+    "SECRET": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 24,
+      "fp": 0,
+      "fn": 0,
+      "exact": 24
+    },
+    "ALL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_span_rate": 1.0,
+      "tp": 84,
+      "fp": 0,
+      "fn": 0,
+      "exact": 84
+    },
+    "n_cases": 168,
+    "n_negative_cases": 84,
+    "false_positives_on_negative_cases": 0
+  },
+  "scenarios": {
+    "n": 13,
+    "passed": 13,
+    "scenarios": [
+      {
+        "name": "Carte perdue (1 carte) : confirmation puis blocage",
+        "passed": true,
+        "trace": [
+          {
+            "message": "J'ai perdu ma carte",
+            "action": "CONFIRM_ACTION",
+            "expected": "CONFIRM_ACTION",
+            "ok": true
+          },
+          {
+            "message": "oui",
+            "action": "ACTION_DONE",
+            "expected": "ACTION_DONE",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Carte volée (2 cartes) : choix, puis refus -> rien n'est modifié",
+        "passed": true,
+        "trace": [
+          {
+            "message": "ma carte a été volée",
+            "action": "CHOOSE_CARD",
+            "expected": "CHOOSE_CARD",
+            "ok": true
+          },
+          {
+            "message": "1",
+            "action": "CONFIRM_ACTION",
+            "expected": "CONFIRM_ACTION",
+            "ok": true
+          },
+          {
+            "message": "non",
+            "action": "ACTION_CANCELLED",
+            "expected": "ACTION_CANCELLED",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Lost card (EN) with card number: masked, then blocked",
+        "passed": true,
+        "trace": [
+          {
+            "message": "I lost my card [CARD ****1111]",
+            "action": "CONFIRM_ACTION",
+            "expected": "CONFIRM_ACTION",
+            "ok": true
+          },
+          {
+            "message": "yes",
+            "action": "ACTION_DONE",
+            "expected": "ACTION_DONE",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Paiement en attente : outil opérations",
+        "passed": true,
+        "trace": [
+          {
+            "message": "Pourquoi mon paiement est encore en attente ?",
+            "action": "CALL_TOOL",
+            "expected": "CALL_TOOL",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Débit en double : opérations + escalade",
+        "passed": true,
+        "trace": [
+          {
+            "message": "j'ai été débité deux fois au restaurant",
+            "action": "ESCALATE_HUMAN",
+            "expected": "ESCALATE_HUMAN",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Virement en attente : outil virements",
+        "passed": true,
+        "trace": [
+          {
+            "message": "mon virement est en attente depuis deux jours",
+            "action": "CALL_TOOL",
+            "expected": "CALL_TOOL",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Forgot PIN (EN): documented answer",
+        "passed": true,
+        "trace": [
+          {
+            "message": "I forgot my PIN, what can I do?",
+            "action": "ANSWER_FROM_KB",
+            "expected": "ANSWER_FROM_KB",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Secret communiqué : masqué et non stocké",
+        "passed": true,
+        "trace": [
+          {
+            "message": "mon code PIN est [SECRET] et il ne marche plus",
+            "action": "ANSWER_FROM_KB",
+            "expected": null,
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Hors périmètre",
+        "passed": true,
+        "trace": [
+          {
+            "message": "donne-moi une recette de tajine",
+            "action": "OUT_OF_SCOPE",
+            "expected": "OUT_OF_SCOPE",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Demande de conseiller",
+        "passed": true,
+        "trace": [
+          {
+            "message": "je veux parler à un conseiller",
+            "action": "ESCALATE_HUMAN",
+            "expected": "ESCALATE_HUMAN",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Question vague : clarification puis choix",
+        "passed": true,
+        "trace": [
+          {
+            "message": "j'ai une question sur ma carte",
+            "action": "ASK_CLARIFICATION",
+            "expected": "ASK_CLARIFICATION",
+            "ok": true
+          },
+          {
+            "message": "1",
+            "action": "CALL_TOOL",
+            "expected": "CALL_TOOL",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Incertitude persistante : escalade après une clarification",
+        "passed": true,
+        "trace": [
+          {
+            "message": "problème avec mon compte",
+            "action": "ASK_CLARIFICATION",
+            "expected": "ASK_CLARIFICATION",
+            "ok": true
+          },
+          {
+            "message": "toujours un problème avec mon compte",
+            "action": "ESCALATE_HUMAN",
+            "expected": "ESCALATE_HUMAN",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "name": "Salutation",
+        "passed": true,
+        "trace": [
+          {
+            "message": "Bonjour",
+            "action": "GREETING",
+            "expected": "GREETING",
+            "ok": true
+          }
+        ]
+      }
+    ]
+  },
+  "latency_chat": {
+    "n_messages": 200,
+    "p50_ms": 9.1,
+    "p95_ms": 13.5,
+    "mean_ms": 9.5
+  },
+  "figures": [
+    "risk_coverage.png",
+    "top_confusions.png"
+  ]
+}

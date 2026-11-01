@@ -1,0 +1,23 @@
+digraph G {
+  rankdir=LR; fontname="Helvetica"; nodesep=0.35; ranksep=0.45;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, fillcolor="#eef3f7", color="#0b4a6f"];
+  edge [fontname="Helvetica", fontsize=8, color="#55606b"];
+  ui [label="Interface web\n(HTML/JS)\nou client API", fillcolor="#ffffff"];
+  api [label="API FastAPI\nvalidation Pydantic\n/api/chat, /api/cases..."];
+  subgraph cluster_svc { label="AssistantService (un tour de conversation)"; fontsize=10; color="#9fb3c4"; style=rounded;
+    pii [label="1. Masquage\ncarte (Luhn), IBAN (mod 97),\nRIB, téléphone, e-mail, CIN,\nsecrets (PIN, CVV, OTP, mot de passe)"];
+    lang [label="2. Langue FR / EN\n(marqueurs lexicaux)"];
+    nlu [label="3. Compréhension\nEN : classifieur TF-IDF + rég. log.\n(77 intentions -> 21 articles)\nFR : recherche BM25 + TF-IDF\n+ garde-fou de périmètre"];
+    pol [label="4. Politique déterministe\nseuils appris sur validation\nrépondre / outil / confirmer /\nclarifier / escalader / hors périmètre"];
+    gen [label="5. Réponse extractive\nphrases de l'article + outils\n+ source citée\n(option : LLM local Ollama\navec garde-fou sur les chiffres)"];
+  }
+  kb [label="Base de connaissances\n21 articles FR/EN\n+ lexique FR", shape=folder, fillcolor="#fff7ec"];
+  model [label="Modèle\nintent_model.joblib\n+ seuils", shape=folder, fillcolor="#fff7ec"];
+  bank [label="SQLite simulée\nclients, cartes,\nopérations, virements,\njournal d'audit", shape=cylinder, fillcolor="#f2f7ee"];
+  conv [label="SQLite conversations\ntexte MASQUÉ uniquement,\nétat, dossiers d'escalade", shape=cylinder, fillcolor="#f2f7ee"];
+  ui -> api -> pii -> lang -> nlu -> pol -> gen;
+  kb -> nlu; model -> nlu; kb -> gen;
+  pol -> bank [label="outils (client connecté uniquement)\nblock_card après confirmation"];
+  gen -> conv [label="journal"]; pol -> conv [label="état / dossier"];
+  gen -> api [style=dashed, label="réponse JSON"];
+}

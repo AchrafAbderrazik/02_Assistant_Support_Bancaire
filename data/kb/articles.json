@@ -1,0 +1,314 @@
+{
+ "bank": "Banque Démo (banque fictive créée pour la démonstration)",
+ "warning": "Base de connaissances rédigée pour la démonstration. Les délais et montants sont des exemples et ne décrivent aucune banque réelle.",
+ "articles": [
+  {
+   "id": "A01",
+   "intents": [
+    "card_arrival",
+    "card_delivery_estimate",
+    "activate_my_card",
+    "order_physical_card",
+    "get_physical_card",
+    "getting_spare_card"
+   ],
+   "tool": "get_card_status",
+   "sensitive": false,
+   "title_fr": "Commander, recevoir et activer sa carte",
+   "body_fr": "Une carte physique se commande depuis l'application, rubrique Cartes. Exemple de délai indicatif : 5 à 10 jours ouvrés après la commande ; le suivi de l'envoi est visible dans l'application. À réception, activez la carte depuis l'application en saisissant le code à 6 chiffres imprimé sur le courrier, ou en effectuant un premier paiement avec code PIN. Vous pouvez aussi commander une seconde carte (carte supplémentaire) pour le même compte. Si la carte n'est pas arrivée après le délai indiqué, signalez-le : une nouvelle carte peut être envoyée et l'ancienne est alors bloquée.",
+   "title_en": "Ordering, receiving and activating your card",
+   "body_en": "You can order a physical card in the app, under Cards. Example delivery time: 5 to 10 working days after ordering; shipping can be tracked in the app. When your card arrives, activate it in the app with the 6-digit code printed on the letter, or by making a first chip-and-PIN payment. You can also order a spare card for the same account. If the card has not arrived after the expected delivery time, report it: a new card can be sent and the old one is then blocked."
+  },
+  {
+   "id": "A02",
+   "intents": [
+    "getting_virtual_card",
+    "get_disposable_virtual_card",
+    "disposable_card_limits",
+    "virtual_card_not_working"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Cartes virtuelles et cartes à usage unique",
+   "body_fr": "Une carte virtuelle se crée instantanément dans l'application et sert aux achats en ligne. Une carte à usage unique génère de nouvelles coordonnées après chaque paiement, ce qui limite le risque en cas de fuite de données ; certaines opérations récurrentes (abonnements, prélèvements) ne sont pas possibles avec elle. Si une carte virtuelle est refusée, vérifiez qu'elle n'est pas gelée, que le commerçant accepte les cartes virtuelles et que le montant respecte vos plafonds.",
+   "title_en": "Virtual and disposable cards",
+   "body_en": "A virtual card is created instantly in the app and is used for online purchases. A disposable card generates new card details after every payment, which limits the risk if data leaks; some recurring operations (subscriptions, direct debits) are not possible with it. If a virtual card is declined, check that it is not frozen, that the merchant accepts virtual cards and that the amount is within your limits."
+  },
+  {
+   "id": "A03",
+   "intents": [
+    "lost_or_stolen_card",
+    "compromised_card",
+    "lost_or_stolen_phone"
+   ],
+   "tool": "block_card",
+   "sensitive": true,
+   "title_fr": "Carte perdue, volée ou compromise, téléphone perdu",
+   "body_fr": "Bloquez immédiatement la carte depuis l'application (rubrique Cartes, Geler ou Bloquer) ou demandez à l'assistant de le faire après confirmation. Un blocage définitif est irréversible : une nouvelle carte est alors commandée. Si vous voyez des opérations que vous ne reconnaissez pas, un conseiller de l'équipe fraude vous contacte pour les contester. Si votre téléphone est perdu, connectez-vous depuis un autre appareil pour geler vos cartes et changer votre code d'accès.",
+   "title_en": "Lost, stolen or compromised card, lost phone",
+   "body_en": "Block the card immediately in the app (Cards, Freeze or Block) or ask the assistant to do it after confirmation. A permanent block cannot be undone: a new card is then ordered. If you see transactions you do not recognise, an adviser from the fraud team will contact you to dispute them. If your phone is lost, log in from another device to freeze your cards and change your passcode."
+  },
+  {
+   "id": "A04",
+   "intents": [
+    "declined_card_payment",
+    "card_not_working",
+    "contactless_not_working",
+    "card_acceptance"
+   ],
+   "tool": "get_card_status",
+   "sensitive": false,
+   "title_fr": "Paiement par carte refusé ou carte qui ne fonctionne pas",
+   "body_fr": "Un paiement peut être refusé si la carte est gelée ou pas encore activée, si le solde est insuffisant, si un plafond est atteint, ou si le commerçant n'accepte pas ce type de carte. Le paiement sans contact est désactivé jusqu'au premier paiement avec code PIN, puis demandé de nouveau régulièrement par sécurité. Vérifiez le statut de la carte et vos plafonds dans l'application ; si la puce est endommagée, commandez une carte de remplacement.",
+   "title_en": "Declined card payment or card not working",
+   "body_en": "A payment can be declined if the card is frozen or not activated yet, if the balance is too low, if a limit has been reached, or if the merchant does not accept this type of card. Contactless is disabled until the first chip-and-PIN payment, and the PIN is requested again from time to time for security. Check the card status and your limits in the app; if the chip is damaged, order a replacement card."
+  },
+  {
+   "id": "A05",
+   "intents": [
+    "apple_pay_or_google_pay",
+    "visa_or_mastercard",
+    "supported_cards_and_currencies",
+    "card_linking"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Paiement mobile, réseau de la carte et cartes acceptées",
+   "body_fr": "Vos cartes peuvent être ajoutées à Apple Pay ou Google Pay depuis l'application, rubrique Cartes. Le réseau (Visa ou Mastercard) figure sur la carte et dépend du pays d'émission. Pour recharger votre compte, vous pouvez lier une carte bancaire d'une autre banque à votre nom ; les cartes de crédit et certaines cartes prépayées peuvent être refusées. La liste des devises prises en charge est disponible dans l'application.",
+   "title_en": "Mobile payments, card network and supported cards",
+   "body_en": "You can add your cards to Apple Pay or Google Pay in the app, under Cards. The network (Visa or Mastercard) is printed on the card and depends on the issuing country. To top up your account, you can link a card from another bank in your own name; credit cards and some prepaid cards may be refused. The list of supported currencies is available in the app."
+  },
+  {
+   "id": "A06",
+   "intents": [
+    "change_pin",
+    "pin_blocked",
+    "passcode_forgotten"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Code PIN et code d'accès à l'application",
+   "body_fr": "Vous pouvez afficher ou modifier le code PIN de votre carte dans l'application, rubrique Sécurité. Après trois codes erronés, le PIN est bloqué : il se débloque depuis l'application ou à un distributeur compatible. Si vous avez oublié le code d'accès à l'application, utilisez « Code oublié » sur l'écran de connexion ; une vérification d'identité peut être demandée.",
+   "title_en": "Card PIN and app passcode",
+   "body_en": "You can view or change your card PIN in the app, under Security. After three wrong attempts the PIN is blocked: it can be unblocked in the app or at a compatible cash machine. If you forgot your app passcode, use Forgot passcode on the login screen; an identity check may be required."
+  },
+  {
+   "id": "A07",
+   "intents": [
+    "card_payment_not_recognised",
+    "cash_withdrawal_not_recognised",
+    "direct_debit_payment_not_recognised",
+    "transaction_charged_twice",
+    "extra_charge_on_statement"
+   ],
+   "tool": "list_recent_transactions",
+   "sensitive": true,
+   "title_fr": "Opération non reconnue, débit en double ou frais inattendus",
+   "body_fr": "Vérifiez d'abord le détail de l'opération dans l'application : le nom affiché peut différer de celui du magasin. Un débit en double est souvent une pré-autorisation qui disparaît en quelques jours. Si vous ne reconnaissez pas une opération, gelez la carte et contactez l'équipe fraude : un conseiller ouvre une contestation. Un prélèvement non reconnu peut être contesté depuis la rubrique Prélèvements.",
+   "title_en": "Unrecognised transaction, double charge or unexpected fees",
+   "body_en": "First check the transaction details in the app: the name shown may differ from the shop's name. A double charge is often a pre-authorisation that disappears within a few days. If you do not recognise a transaction, freeze the card and contact the fraud team: an adviser opens a dispute. An unrecognised direct debit can be disputed from the Direct debits section."
+  },
+  {
+   "id": "A08",
+   "intents": [
+    "pending_card_payment",
+    "reverted_card_payment?",
+    "pending_cash_withdrawal"
+   ],
+   "tool": "list_recent_transactions",
+   "sensitive": false,
+   "title_fr": "Paiement ou retrait en attente, paiement annulé",
+   "body_fr": "Un paiement ou un retrait reste « en attente » tant que le commerçant ou le distributeur ne l'a pas confirmé, en général quelques jours ouvrés (exemple indicatif : jusqu'à 7 jours). Pendant ce temps, le montant est réservé. Si l'opération n'est pas confirmée, elle est annulée et le montant redevient disponible automatiquement.",
+   "title_en": "Pending payment or withdrawal, reverted payment",
+   "body_en": "A payment or withdrawal stays pending until the merchant or cash machine confirms it, usually within a few working days (example: up to 7 days). Meanwhile the amount is reserved. If the transaction is not confirmed, it is cancelled and the money becomes available again automatically."
+  },
+  {
+   "id": "A09",
+   "intents": [
+    "card_payment_fee_charged",
+    "cash_withdrawal_charge"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Frais de paiement par carte et de retrait",
+   "body_fr": "Selon votre formule, certains paiements par carte (par exemple dans une autre devise) et certains retraits au-delà d'un montant gratuit mensuel peuvent entraîner des frais. Le détail des frais appliqués est visible en touchant l'opération dans l'application ; la grille tarifaire de votre formule précise les montants (exemples de démonstration uniquement).",
+   "title_en": "Card payment and cash withdrawal fees",
+   "body_en": "Depending on your plan, some card payments (for example in another currency) and withdrawals above a free monthly amount may incur fees. The fee applied is shown by tapping the transaction in the app; your plan's price list gives the amounts (demonstration examples only)."
+  },
+  {
+   "id": "A10",
+   "intents": [
+    "exchange_rate",
+    "card_payment_wrong_exchange_rate",
+    "wrong_exchange_rate_for_cash_withdrawal",
+    "exchange_charge",
+    "exchange_via_app",
+    "fiat_currency_support"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Taux de change et opérations en devises",
+   "body_fr": "Les paiements et retraits en devises sont convertis au taux du réseau de la carte le jour du traitement, ce qui peut différer du taux affiché au moment de l'achat. Une majoration peut s'appliquer le week-end ou au-delà d'un plafond mensuel selon votre formule. Vous pouvez aussi échanger des devises directement dans l'application, pour les devises prises en charge.",
+   "title_en": "Exchange rates and foreign-currency operations",
+   "body_en": "Foreign-currency payments and withdrawals are converted at the card network's rate on the processing day, which can differ from the rate shown at purchase time. A mark-up may apply at weekends or above a monthly allowance depending on your plan. You can also exchange currencies directly in the app for supported currencies."
+  },
+  {
+   "id": "A11",
+   "intents": [
+    "atm_support",
+    "declined_cash_withdrawal",
+    "wrong_amount_of_cash_received",
+    "card_swallowed"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Retraits au distributeur : refus, montant incorrect, carte avalée",
+   "body_fr": "Les retraits sont possibles dans les distributeurs affichant le réseau de votre carte. Un retrait peut être refusé si le plafond est atteint ou si le distributeur n'accepte pas la carte. Si le montant reçu est inférieur au montant débité, signalez-le avec la date, l'heure et le lieu : une enquête est ouverte auprès du gestionnaire du distributeur. Si le distributeur a avalé votre carte, gelez-la et commandez-en une nouvelle.",
+   "title_en": "Cash machines: declined withdrawal, wrong amount, swallowed card",
+   "body_en": "You can withdraw cash at machines showing your card's network. A withdrawal can be declined if a limit is reached or if the machine does not accept the card. If you received less cash than was debited, report it with the date, time and place: an investigation is opened with the machine operator. If the machine kept your card, freeze it and order a new one."
+  },
+  {
+   "id": "A12",
+   "intents": [
+    "topping_up_by_card",
+    "top_up_by_cash_or_cheque",
+    "automatic_top_up",
+    "pending_top_up",
+    "verify_top_up"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Recharger son compte : moyens et délais",
+   "body_fr": "Vous pouvez recharger votre compte par carte bancaire (crédit généralement immédiat), par virement (délai selon la banque d'origine) ou activer la recharge automatique quand le solde passe sous un seuil. Les espèces et chèques ne sont pas acceptés. Une première recharge par carte peut nécessiter une vérification : un petit montant temporaire, à confirmer dans l'application.",
+   "title_en": "Topping up your account: methods and timing",
+   "body_en": "You can top up by card (usually instant), by bank transfer (timing depends on the sending bank) or switch on automatic top-up when the balance falls below a threshold. Cash and cheques are not accepted. A first card top-up may require verification: a small temporary amount to confirm in the app."
+  },
+  {
+   "id": "A13",
+   "intents": [
+    "top_up_failed",
+    "top_up_reverted",
+    "top_up_limits",
+    "top_up_by_card_charge",
+    "top_up_by_bank_transfer_charge"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Recharge échouée ou annulée, plafonds et frais de recharge",
+   "body_fr": "Une recharge peut échouer si la carte utilisée est refusée par sa banque, si les informations sont incorrectes ou si un plafond est atteint. Une recharge annulée est remboursée automatiquement sur le moyen de paiement d'origine, sous quelques jours ouvrés. Des plafonds de recharge s'appliquent selon votre formule ; certaines recharges par carte peuvent entraîner des frais, affichés avant validation.",
+   "title_en": "Failed or reverted top-up, limits and top-up fees",
+   "body_en": "A top-up can fail if the card is refused by its bank, if the details are wrong or if a limit is reached. A reverted top-up is refunded automatically to the original payment method within a few working days. Top-up limits depend on your plan; some card top-ups may carry a fee, shown before you confirm."
+  },
+  {
+   "id": "A14",
+   "intents": [
+    "transfer_timing",
+    "pending_transfer",
+    "balance_not_updated_after_bank_transfer",
+    "transfer_into_account",
+    "receiving_money"
+   ],
+   "tool": "get_transfer_status",
+   "sensitive": false,
+   "title_fr": "Délais de virement, virement en attente, recevoir de l'argent",
+   "body_fr": "Un virement entre clients de la banque est immédiat. Vers une autre banque, il prend en général un à trois jours ouvrés selon la devise et le pays ; il peut rester en attente le temps de contrôles de sécurité. Pour recevoir de l'argent, communiquez votre RIB ou IBAN affiché dans l'application. Si un virement entrant n'apparaît pas, vérifiez les coordonnées utilisées par l'émetteur et le délai de sa banque.",
+   "title_en": "Transfer timing, pending transfers, receiving money",
+   "body_en": "Transfers between customers of the bank are instant. To another bank they usually take one to three working days depending on currency and country; a transfer may stay pending during security checks. To receive money, share the account details shown in the app. If an incoming transfer does not appear, check the details the sender used and their bank's processing time."
+  },
+  {
+   "id": "A15",
+   "intents": [
+    "failed_transfer",
+    "declined_transfer",
+    "cancel_transfer",
+    "beneficiary_not_allowed"
+   ],
+   "tool": "get_transfer_status",
+   "sensitive": false,
+   "title_fr": "Virement échoué, refusé ou à annuler, bénéficiaire refusé",
+   "body_fr": "Un virement peut échouer si les coordonnées du bénéficiaire sont incorrectes ou si la banque destinataire le rejette ; le montant revient alors sur votre compte. Un virement peut être annulé tant qu'il est en attente, depuis le détail de l'opération. Certains bénéficiaires ne peuvent pas être ajoutés pour des raisons de conformité : un conseiller peut vous en préciser le motif lorsque c'est possible.",
+   "title_en": "Failed, declined or cancelled transfers, beneficiary not allowed",
+   "body_en": "A transfer can fail if the beneficiary's details are wrong or if the receiving bank rejects it; the money then returns to your account. A transfer can be cancelled while it is still pending, from the transaction details. Some beneficiaries cannot be added for compliance reasons: an adviser can explain why when possible."
+  },
+  {
+   "id": "A16",
+   "intents": [
+    "transfer_not_received_by_recipient",
+    "transfer_fee_charged"
+   ],
+   "tool": "get_transfer_status",
+   "sensitive": false,
+   "title_fr": "Virement non reçu par le bénéficiaire, frais de virement",
+   "body_fr": "Si le bénéficiaire n'a pas reçu les fonds, vérifiez le statut du virement dans l'application et partagez le justificatif de virement. Les banques intermédiaires peuvent allonger le délai pour certaines devises. Des frais peuvent s'appliquer aux virements internationaux ou en devises, et la banque destinataire peut aussi prélever des frais.",
+   "title_en": "Transfer not received by the recipient, transfer fees",
+   "body_en": "If the recipient has not received the money, check the transfer status in the app and share the transfer receipt. Intermediary banks can lengthen the delay for some currencies. Fees may apply to international or foreign-currency transfers, and the receiving bank may also charge fees."
+  },
+  {
+   "id": "A17",
+   "intents": [
+    "balance_not_updated_after_cheque_or_cash_deposit"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Dépôt d'espèces ou de chèque non crédité",
+   "body_fr": "Les dépôts d'espèces ou de chèques effectués auprès d'un partenaire peuvent prendre quelques jours ouvrés avant d'apparaître sur le solde. Si le montant n'apparaît pas après ce délai, conservez le reçu de dépôt et transmettez-le à un conseiller, qui ouvrira une recherche.",
+   "title_en": "Cash or cheque deposit not credited",
+   "body_en": "Cash or cheque deposits made with a partner can take a few working days to appear in your balance. If the amount still does not appear after that, keep the deposit receipt and send it to an adviser, who will open an investigation."
+  },
+  {
+   "id": "A18",
+   "intents": [
+    "request_refund",
+    "Refund_not_showing_up"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Remboursements commerçants",
+   "body_fr": "Un remboursement est initié par le commerçant ; il apparaît en général sous quelques jours ouvrés après son émission. Si le commerçant refuse de rembourser un achat non conforme, une contestation peut être ouverte depuis le détail de l'opération, avec les justificatifs.",
+   "title_en": "Merchant refunds",
+   "body_en": "A refund is initiated by the merchant; it usually appears within a few working days after it is issued. If the merchant refuses to refund a faulty purchase, a dispute can be opened from the transaction details, with supporting documents."
+  },
+  {
+   "id": "A19",
+   "intents": [
+    "verify_my_identity",
+    "why_verify_identity",
+    "unable_to_verify_identity",
+    "verify_source_of_funds"
+   ],
+   "tool": null,
+   "sensitive": true,
+   "title_fr": "Vérification d'identité et origine des fonds",
+   "body_fr": "La banque doit vérifier l'identité de ses clients (obligations réglementaires de connaissance du client et de lutte contre le blanchiment). La vérification se fait dans l'application avec une pièce d'identité valide et un selfie. En cas d'échec, vérifiez la lisibilité et la validité du document. La banque peut aussi demander des justificatifs de l'origine des fonds : un conseiller conformité traite ces demandes.",
+   "title_en": "Identity verification and source of funds",
+   "body_en": "The bank must verify its customers' identity (know-your-customer and anti-money-laundering obligations). Verification is done in the app with a valid ID document and a selfie. If it fails, check that the document is readable and valid. The bank may also ask for proof of the source of funds: a compliance adviser handles these requests."
+  },
+  {
+   "id": "A20",
+   "intents": [
+    "edit_personal_details",
+    "terminate_account",
+    "age_limit",
+    "country_support"
+   ],
+   "tool": null,
+   "sensitive": false,
+   "title_fr": "Données personnelles, clôture du compte, âge et pays",
+   "body_fr": "Vous pouvez modifier vos coordonnées dans l'application ; certains changements (nom, adresse) nécessitent un justificatif. La clôture du compte se demande depuis l'application après avoir ramené le solde à zéro. Le compte est réservé aux personnes majeures (un compte jeune peut exister selon les formules) et aux résidents des pays pris en charge, dont la liste figure dans l'application.",
+   "title_en": "Personal details, closing the account, age and countries",
+   "body_en": "You can update your details in the app; some changes (name, address) require proof. Account closure is requested in the app after bringing the balance to zero. Accounts are for adults (a junior account may exist depending on plans) and for residents of supported countries, listed in the app."
+  },
+  {
+   "id": "A21",
+   "intents": [
+    "card_about_to_expire"
+   ],
+   "tool": "get_card_status",
+   "sensitive": false,
+   "title_fr": "Carte bientôt expirée",
+   "body_fr": "Une nouvelle carte est envoyée automatiquement avant la date d'expiration si votre compte est actif ; vous pouvez aussi la commander manuellement depuis l'application. Pensez à mettre à jour vos coordonnées de carte chez les commerçants et services d'abonnement.",
+   "title_en": "Card about to expire",
+   "body_en": "A new card is sent automatically before the expiry date if your account is active; you can also order it manually in the app. Remember to update your card details with merchants and subscription services."
+  }
+ ]
+}

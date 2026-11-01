@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assistant de support — Banque Démo</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Assistant de support bancaire</h1>
+      <p class="sub">Démonstration — Banque Démo, clients et opérations <strong>fictifs</strong>. Données personnelles masquées avant tout traitement.</p>
+    </div>
+  </header>
+  <main>
+    <aside class="panel">
+      <label for="customer">Client connecté (fictif)</label>
+      <select id="customer"></select>
+      <label for="lang">Langue</label>
+      <select id="lang">
+        <option value="">Détection automatique</option>
+        <option value="fr">Français</option>
+        <option value="en">English</option>
+      </select>
+      <button id="reset" class="secondary">Nouvelle conversation</button>
+      <h2>Exemples</h2>
+      <div id="examples" class="examples"></div>
+      <h2>Évaluation</h2>
+      <dl id="metrics" class="metrics"><dt>Chargement…</dt></dl>
+    </aside>
+    <section class="chat">
+      <div id="log" class="log" aria-live="polite"></div>
+      <form id="form" class="composer">
+        <input id="msg" type="text" maxlength="1000" autocomplete="off" placeholder="Écrivez votre question (ex. : j'ai perdu ma carte)">
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+    <aside class="panel">
+      <h2>Dossiers transmis à un conseiller</h2>
+      <ul id="cases" class="cases"><li class="muted">Aucun pour l'instant.</li></ul>
+      <h2>Dernière décision</h2>
+      <dl id="decision" class="metrics"><dt class="muted">—</dt></dl>
+    </aside>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

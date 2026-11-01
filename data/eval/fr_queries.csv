@@ -1,0 +1,118 @@
+split,expected,text
+dev,A01,"Ma carte n'est toujours pas arrivée, ça fait deux semaines"
+dev,A01,Comment activer la nouvelle carte que je viens de recevoir ?
+test,A01,j'ai commandé une carte il y a 10 jours et rien reçu
+test,A01,Est-ce que je peux avoir une deuxième carte pour mon compte ?
+test,A01,comment suivre la livraison de ma carte bancaire
+dev,A02,Je voudrais une carte virtuelle pour payer sur internet
+dev,A02,ma carte virtuelle est refusée sur un site marchand
+test,A02,c'est quoi une carte à usage unique ?
+test,A02,Combien de cartes virtuelles jetables puis-je créer ?
+test,A02,comment générer une carte virtuelle depuis l'application
+dev,A03,"J'ai perdu ma carte hier soir, que faire ?"
+dev,A03,on m'a volé mon téléphone avec l'application bancaire dessus
+test,A03,"ma carte a été volée, bloquez-la svp"
+test,A03,je pense que ma carte est piratée
+test,A03,je veux faire opposition sur ma carte
+dev,A04,Mon paiement a été refusé au supermarché alors que j'ai de l'argent
+dev,A04,le paiement sans contact ne marche plus
+test,A04,ma carte ne fonctionne pas chez les commerçants
+test,A04,pourquoi ma carte est refusée sur le terminal de paiement ?
+test,A04,le magasin n'accepte pas ma carte
+dev,A05,Est-ce que je peux ajouter ma carte à Apple Pay ?
+dev,A05,ma carte est-elle une Visa ou une Mastercard ?
+test,A05,Google Pay est-il disponible avec votre carte ?
+test,A05,quelles devises sont acceptées sur le compte ?
+test,A05,comment lier une carte d'une autre banque à mon compte
+dev,A06,J'ai oublié mon code PIN
+dev,A06,mon code est bloqué après trois essais
+test,A06,comment changer le code secret de ma carte ?
+test,A06,j'ai oublié le code d'accès de l'application
+test,A06,où modifier mon PIN
+dev,A07,Il y a un paiement sur mon compte que je n'ai pas fait
+dev,A07,j'ai été débité deux fois pour le même achat
+test,A07,je ne reconnais pas un retrait d'argent sur mon relevé
+test,A07,un prélèvement inconnu apparaît sur mon compte
+test,A07,des frais bizarres sont apparus sur mon relevé
+dev,A08,Pourquoi mon paiement est encore en attente ?
+dev,A08,mon retrait au distributeur apparaît en attente
+test,A08,l'achat d'hier est toujours marqué comme en cours
+test,A08,"un paiement a été annulé puis est revenu sur mon compte, c'est normal ?"
+test,A08,combien de temps reste une opération en attente ?
+dev,A09,Pourquoi j'ai payé des frais sur un paiement par carte ?
+dev,A09,combien coûte un retrait au distributeur ?
+test,A09,on m'a facturé une commission pour un retrait
+test,A09,y a-t-il des frais quand je paie avec ma carte ?
+test,A09,frais de retrait d'espèces trop élevés
+dev,A10,Quel taux de change utilisez-vous pour les paiements en euros ?
+dev,A10,le taux de change appliqué à mon achat à l'étranger est faux
+test,A10,y a-t-il des frais de change quand je paie en dollars ?
+test,A10,puis-je changer des dirhams en euros dans l'application ?
+test,A10,le montant converti de mon retrait en devise est incorrect
+dev,A11,Le distributeur a avalé ma carte
+dev,A11,le GAB m'a donné moins d'argent que demandé
+test,A11,mon retrait au DAB a été refusé
+test,A11,les billets ne sont pas sortis mais mon compte est débité
+test,A11,où trouver un distributeur compatible ?
+dev,A12,Comment recharger mon compte avec une carte ?
+dev,A12,puis-je alimenter mon compte en espèces ?
+test,A12,comment activer la recharge automatique
+test,A12,ma recharge est en attente depuis ce matin
+test,A12,pourquoi dois-je vérifier ma recharge par carte ?
+dev,A13,Ma recharge a échoué
+dev,A13,quel est le plafond de recharge ?
+test,A13,ma recharge a été annulée sans raison
+test,A13,y a-t-il des frais pour recharger par virement ?
+test,A13,la recharge par carte est refusée
+dev,A14,Combien de temps prend un virement ?
+dev,A14,mon virement est en attente depuis deux jours
+test,A14,j'ai reçu un virement mais mon solde n'a pas changé
+test,A14,comment recevoir de l'argent sur mon compte ?
+test,A14,quand le virement entrant sera-t-il crédité ?
+dev,A15,Mon virement a échoué
+dev,A15,comment annuler un virement que je viens d'envoyer ?
+test,A15,le virement vers mon frère a été refusé
+test,A15,impossible d'ajouter ce bénéficiaire
+test,A15,pourquoi mon virement a-t-il été rejeté ?
+dev,A16,Le bénéficiaire n'a pas reçu mon virement
+dev,A16,combien coûte un virement ?
+test,A16,j'ai envoyé de l'argent il y a trois jours et la personne n'a rien reçu
+test,A16,on m'a facturé des frais sur mon virement
+test,A16,l'argent n'est toujours pas arrivé chez le destinataire
+dev,A17,J'ai déposé un chèque et il n'apparaît pas
+dev,A17,mon dépôt d'espèces n'est pas crédité
+test,A17,le versement en agence n'est pas sur mon solde
+test,A17,"chèque encaissé il y a 4 jours, toujours rien"
+test,A17,mon solde ne tient pas compte de mon dépôt
+dev,A18,Le commerçant m'a remboursé mais je ne vois rien
+dev,A18,comment demander un remboursement ?
+test,A18,remboursement d'un achat en ligne pas encore apparu
+test,A18,le vendeur dit avoir remboursé il y a une semaine
+test,A18,je veux me faire rembourser un article retourné
+dev,A19,Pourquoi dois-je vérifier mon identité ?
+dev,A19,je n'arrive pas à faire la vérification d'identité
+test,A19,quels documents pour confirmer mon identité ?
+test,A19,"vous me demandez l'origine des fonds, pourquoi ?"
+test,A19,la photo de ma pièce d'identité est refusée
+dev,A20,Je veux changer mon adresse
+dev,A20,comment fermer mon compte ?
+test,A20,quel âge faut-il pour ouvrir un compte ?
+test,A20,"je déménage à l'étranger, puis-je garder mon compte ?"
+test,A20,modifier mon nom de famille après mariage
+dev,A21,Ma carte expire le mois prochain
+dev,A21,comment renouveler ma carte bientôt expirée ?
+test,A21,"ma carte arrive à expiration, vais-je en recevoir une nouvelle ?"
+test,A21,la date d'expiration de ma carte approche
+test,A21,que se passe-t-il quand ma carte expire ?
+dev,OOS,Quel temps fera-t-il demain à Casablanca ?
+dev,OOS,Je veux un crédit immobilier
+dev,OOS,donne-moi une recette de tajine
+dev,OOS,Quels sont vos horaires d'ouverture d'agence ?
+test,OOS,je souhaite investir en bourse
+test,OOS,comment souscrire une assurance habitation ?
+test,OOS,qui a gagné le match hier ?
+test,OOS,je voudrais un prêt pour une voiture
+test,OOS,pouvez-vous m'aider à écrire un CV ?
+test,OOS,quel est le cours de l'or aujourd'hui ?
+test,OOS,je veux parler de mon contrat d'assurance vie
+test,OOS,raconte-moi une blague

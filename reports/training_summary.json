@@ -1,0 +1,48 @@
+{
+  "kind": "logreg",
+  "train_size": 9002,
+  "fit_seconds": 25.0,
+  "selected_kind": "logreg",
+  "candidates": {
+    "logreg": {
+      "valid_accuracy": 0.9200799200799201,
+      "valid_macro_f1": 0.9212962764233651,
+      "fit_seconds": 25.0
+    },
+    "svm_calibrated": {
+      "valid_accuracy": 0.9150849150849151,
+      "valid_macro_f1": 0.9171195049686174,
+      "fit_seconds": 5.6
+    }
+  },
+  "fit_size": 9002,
+  "valid_size": 1001,
+  "intent_threshold": 0.4509362672820285,
+  "hybrid_alpha": 0.8,
+  "alpha_valid_article_accuracy": {
+    "1.0": 0.9431,
+    "0.9": 0.9441,
+    "0.8": 0.9451,
+    "0.7": 0.9431,
+    "0.6": 0.9391,
+    "0.5": 0.9411
+  },
+  "en_article_threshold": 0.24800068479433385,
+  "fr_threshold": 0.31141301116697306,
+  "fr_margin": 0.02,
+  "fr_dev": {
+    "dev_size": 46,
+    "dev_coverage": 0.8695652173913043,
+    "dev_accepted_accuracy": 0.975
+  },
+  "target_accepted_accuracy": 0.95,
+  "data_sha256": {
+    "train.csv": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+    "test.csv": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+  },
+  "versions": {
+    "python": "3.13.16",
+    "scikit-learn": "1.9.1"
+  },
+  "seed": 42
+}
